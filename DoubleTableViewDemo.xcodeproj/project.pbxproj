@@ -14,6 +14,8 @@
 		80017B4B1B46596E0000990F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80017B4A1B46596E0000990F /* Images.xcassets */; };
 		80017B4E1B46596E0000990F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80017B4C1B46596E0000990F /* LaunchScreen.xib */; };
 		80017B5A1B46596F0000990F /* DoubleTableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80017B591B46596F0000990F /* DoubleTableViewDemoTests.m */; };
+		80017B651B4659D20000990F /* DoubleTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80017B641B4659D20000990F /* DoubleTableView.m */; };
+		80017B681B465A630000990F /* DoubleTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80017B671B465A630000990F /* DoubleTableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		80017B531B46596F0000990F /* DoubleTableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoubleTableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80017B581B46596F0000990F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80017B591B46596F0000990F /* DoubleTableViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoubleTableViewDemoTests.m; sourceTree = "<group>"; };
+		80017B631B4659D20000990F /* DoubleTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DoubleTableView.h; path = DoubleTableView/DoubleTableView.h; sourceTree = SOURCE_ROOT; };
+		80017B641B4659D20000990F /* DoubleTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DoubleTableView.m; path = DoubleTableView/DoubleTableView.m; sourceTree = SOURCE_ROOT; };
+		80017B671B465A630000990F /* DoubleTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DoubleTableView.xib; path = DoubleTableView/DoubleTableView.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		80017B3C1B46596E0000990F /* DoubleTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				80017B661B4659F40000990F /* DoubleTableView */,
 				80017B411B46596E0000990F /* AppDelegate.h */,
 				80017B421B46596E0000990F /* AppDelegate.m */,
 				80017B441B46596E0000990F /* ViewController.h */,
@@ -117,6 +123,16 @@
 				80017B581B46596F0000990F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80017B661B4659F40000990F /* DoubleTableView */ = {
+			isa = PBXGroup;
+			children = (
+				80017B631B4659D20000990F /* DoubleTableView.h */,
+				80017B641B4659D20000990F /* DoubleTableView.m */,
+				80017B671B465A630000990F /* DoubleTableView.xib */,
+			);
+			name = DoubleTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +217,7 @@
 			files = (
 				80017B491B46596E0000990F /* Main.storyboard in Resources */,
 				80017B4E1B46596E0000990F /* LaunchScreen.xib in Resources */,
+				80017B681B465A630000990F /* DoubleTableView.xib in Resources */,
 				80017B4B1B46596E0000990F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +238,7 @@
 			files = (
 				80017B461B46596E0000990F /* ViewController.m in Sources */,
 				80017B431B46596E0000990F /* AppDelegate.m in Sources */,
+				80017B651B4659D20000990F /* DoubleTableView.m in Sources */,
 				80017B401B46596E0000990F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DoubleTableViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DoubleTableViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
