@@ -17,6 +17,5 @@ Pod::Spec.new do |s|
 
   s.frameworks   = 'QuartzCore'
   s.source_files = 'DoubleTableView/*.{h,m,xib}'
-  s.preserve_paths  = 'Demo'
   s.requires_arc = true
 end
