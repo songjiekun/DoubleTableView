@@ -8,12 +8,7 @@ Pod::Spec.new do |s|
   s.author   = { 'songjiekun' => 'songjiekun@gmail.com' }
   s.source   = { :git => 'https://github.com/songjiekun/DoubleTableView.git', :tag => s.version.to_s }
 
-  s.description = 'SVPullToRefresh allows you to easily add pull-to-refresh ' \
-                  'functionality to any UIScrollView subclass with only 1 ' \
-                  'line of code. Instead of depending on delegates and/or ' \
-                  'subclassing UIViewController, SVPullToRefresh extends ' \
-                  'UIScrollView with a addPullToRefreshWithActionHandler: ' \
-                  'method as well as a pullToRefreshView property.'
+  s.description = '主从两个tableview，选择左侧tableview会刷新右侧tableview' 
 
   s.frameworks   = 'QuartzCore'
   s.source_files = 'DoubleTableView/*.{h,m,xib}'
