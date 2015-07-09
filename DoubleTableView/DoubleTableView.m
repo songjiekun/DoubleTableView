@@ -33,11 +33,12 @@
         
         UIView *nibView= views[0];
         
-        //view设置外观
-        nibView.frame=self.bounds;
-        nibView.autoresizingMask=UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+        [self addSubview:nibView];
         
-        [self addSubview:views[0]];
+        //设置autolayout
+        nibView.translatesAutoresizingMaskIntoConstraints=NO;
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[nibView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(nibView)]];
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[nibView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(nibView)]];
         
     }
     
@@ -56,10 +57,12 @@
         
         UIView *nibView= views[0];
         
-        nibView.frame=self.bounds;
-        nibView.autoresizingMask=UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+        [self addSubview:nibView];
         
-        [self addSubview:views[0]];
+        //设置autolayout
+        nibView.translatesAutoresizingMaskIntoConstraints=NO;
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[nibView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(nibView)]];
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[nibView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(nibView)]];
         
         //为了在IB中展现，设置原始数据
         self.masterArray=@[@"足球",@"蓝球",@"足球",@"排球",@"网球",@"羽毛球",@"乒乓球",@"足球",@"蓝球",@"足球"];
